@@ -16,7 +16,7 @@ Dapp = Smart Contract = Decentralized App
 
 Ethereum is the most used blockchain SC protocol
 
-## Features of Blockchains 
+## 00:15:04 -Features & Advantages of Smart contracts and Blockchain
 1. **Decentralized** - no single entity that is controlling assets / freezing funds (GameStop)
 2. **Transparency & Flexibility** - every transaction on chain can be seen. 
 3. **Speed & Efficiency** - verified by decentralized entity -> faster reaction & operation time
@@ -24,26 +24,44 @@ Ethereum is the most used blockchain SC protocol
 5. **Removal of counterparty risk** - BC avoids conflict of interest btw parties
 6. **Trust Minimized Agreements** - unlike brand-based agreements of today. Unhappy with a bank, we switch to another bank. BC -> shift to math-based, trustless, repeatable, reliable agreements.
 
-## Ethereum Transaction On a Live  Blockchain
-Tools, Terms etc.
+## 00:25:15 - Ethereum Transaction On a Live  Blockchain
+### Tools, Terms etc.
 - **Testnet** - test networks that act exactly like Ethereum but without real currency. E.g. Rinkeby
 - **Block explorer** - views transactions that happen on a blockchain. E.g. Etherscan
 - **[Etherscan](https://etherscan.io)** - see transactions on Ethereum BC
-- **Gas** - every transaction costs some **gas** / paid to Blockchain miners / we get to pick how much fee we want to send 
- ![](../../Downloads/Screenshot 2022-03-27 at 23.01.34.png)
+- **Gas** - every transaction costs some **gas** / paid to Blockchain miners / we get to pick how much fee we want to send / nodes can only process certain amount of transactions / why would we want to pay more gas? So that our transaction can be prioritised in the blockchain / gas price fluctuates based on demand - how many people use it
+![](screeenshots/gas.png)
+- [ETH Gas Station](https://ethgasstation.info)
+- 
+
+## 00:43:46 -How Blockchain works/whats going on Inside the Blockchain
+### Mining a Block
+- Interactive Demo - [link](https://andersbrownworth.com/blockchain/)
+- input Data -> SHA256 Hash -> unique Hash is generated
+- Output hash has a fixed length regardless of input data size
+- Input = Block & Nonce (number used once) & Data -> Output = Hash
+- Valid block must have a hash with four leading zeros -> nonce is used to make block valid - aka four leading zeros in hash ([Source](https://www.javatpoint.com/blockchain-block-hashing#:~:text=The%20four%20leading%20zero%27s%20describes,it%20is%20a%20valid%20block.))
+
+**Genesis block** - the first block in blockchain
+ 
+55:21'den devam...
+
+
+## 01:01:34 -Signing and Verifying a Transaction
 
 
 
+## 01:09:00 -Concepts are same
 
 
+## 01:29:28 - Solidity
+### 01:30:47 -   Lesson 1 - Remix IDE & its features
+### 02:09:20 -  Lesson 2 - StorageFactory
+### 02:26:23 -  Lesson 3 - Fund me
 
-
-
-
-
-
-
-
+## 03:26:35 - Python
+### 03:26:35 -Lesson 4 - Web3. py SimpleStorage
+### 04:27:40 -Lesson 5 - Brownie Simple Storage  
 
 
 
