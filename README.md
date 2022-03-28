@@ -67,16 +67,16 @@ Blockchains are **resilient** and **immutable**
 - immutable -> they cannot be changed
 
 **Consensus** 
-- mechanism used to reach an agreement on blockchain
+- how blockchains decide what the state of the chain is
 - Nakamoto consensus -> the longest chain is taken as groundtruth- 
 
 **Terms**
 - **Gas fee** - paid by whoever makes the transaction
-- **Proof of Work (PoW)** - uses lots of energy to find the working blocks
-- **Proof of Stake (PoS)**
+- **Proof of Work (PoW)** - BTC and ETH are PoW / uses lots of energy to find the working blocks
+- **Proof of Stake (PoS)** - ETH 2.0 will be PoS sharded blockchain
 - **Block reward** - paid to whoever finds a solution to BC problem. If Ethereum network, ETH is paid to solver. If BC net, Bitcoin is paid. 
-- Transaction fee
-
+- **ETH 2.0** - shift from 1 to 2 reduces environmental effects / implements **_sharding_** to solve scalability problem 
+- **Sharding & Rollups** - tries to solve scalability problem / rollup examples: Arbitrom & Optimism  
 
 ## 01:29:28 - Solidity
 ### 01:30:47 -   Lesson 1 - Remix IDE & its features
