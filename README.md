@@ -32,7 +32,8 @@ Ethereum is the most used blockchain SC protocol
 - **Gas** - every transaction costs some **gas** / paid to Blockchain miners / we get to pick how much fee we want to send / nodes can only process certain amount of transactions / why would we want to pay more gas? So that our transaction can be prioritised in the blockchain / gas price fluctuates based on demand - how many people use it
 ![](screeenshots/gas.png)
 - [ETH Gas Station](https://ethgasstation.info)
-- 
+- **Mnemonic (seed) phrase** - phrases generated after creating a crypto account
+- **Node** - Single instance in a decentralized network
 
 ## 00:43:46 -How Blockchain works/whats going on Inside the Blockchain
 ### Mining a Block
@@ -44,14 +45,37 @@ Ethereum is the most used blockchain SC protocol
 
 **Genesis block** - the first block in blockchain
  
-55:21'den devam...
+Distributed Blockchain 
+- has multiple peers 
+- if data in one peer changes, the other peers can be used to validate what is the majority.
+- the majority will be used as groundtruth and the adjusted peer will be corrected/thrown away(??)
 
+hashing data = hashing transactions
+Hashing algorithm - finds hash to data
+Mining - process of finding the solution to the blockchain problem
+nodes get paid for mining blocks 
+block - list of transactions mined together
 
 ## 01:01:34 -Signing and Verifying a Transaction
-
-
+**Public / Private Key**
+private - secret password to transactions / can be used to **sign** transactions / sign <-> verify 
+public - derived from private key automatically using an algorithm / used to verify the transaction was done by you. 
 
 ## 01:09:00 -Concepts are same
+Blockchains are **resilient** and **immutable**
+- failed nodes are not relevant as long as there are other nodes
+- immutable -> they cannot be changed
+
+**Consensus** 
+- mechanism used to reach an agreement on blockchain
+- Nakamoto consensus -> the longest chain is taken as groundtruth- 
+
+**Terms**
+- **Gas fee** - paid by whoever makes the transaction
+- **Proof of Work (PoW)** - uses lots of energy to find the working blocks
+- **Proof of Stake (PoS)**
+- **Block reward** - paid to whoever finds a solution to BC problem. If Ethereum network, ETH is paid to solver. If BC net, Bitcoin is paid. 
+- Transaction fee
 
 
 ## 01:29:28 - Solidity
