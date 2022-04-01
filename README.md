@@ -80,6 +80,104 @@ Blockchains are **resilient** and **immutable**
 
 ## 01:29:28 - Solidity
 ### 01:30:47 -   Lesson 1 - Remix IDE & its features
+[Remix IDE](https://remix.ethereum.org/#optimize=false&runs=200&evmVersion=null&version=soljson-v0.8.7+commit.e28d00a7.js)  
+- Three folders are created as default: contracts, scripts, tests
+
+**Tabs on Remix IDE**
+- File explorer
+- Solidity compiler
+  - compiles all solidity code to machine understandable code
+  - compiler version, language etc. can be selected
+- Deploy & run transactions
+  - JavaScript VM will be used as fake environment
+  - understanding local testing is important 
+- Solidity static analysis
+- Solidity unit testing
+- Starknet
+
+**Code**
+Include the license on the top.
+`// SPDX-License-Identifier: MIT`
+Defining version of Solidity on the first line.
+`pragma solidity >=0.6.0 <0.9.0;`
+
+Creating a `contract` object named `SimpleStorage` 
+`contract SimpleStorage {
+    
+}`
+
+**Types & Declaring Variables**
+Types
+- uint, int, bool, string, address
+- `uint256 favoriteNumber = 5;` 
+- `address favoriteAddress = ${wallet_address};`
+- if not initialized by user, it will be initialized to null value (0 if int)
+
+**Functions**
+- execute modules for us
+- `function store(uint256 _favoriteNumber) public {
+        favoriteNumber = _favoriteNumber
+    }`
+
+**Deploying a contract**
+- deploy tab on left side on Remix IDE
+- **gas** - deploying a contract will cost us gas - similar to when making a transaction
+- any time we want to make a state change on BC we have to pay gas
+
+Being able to switch between versions of Solidity -> important skills to have.
+
+**Visibility**
+- public, external, internal, private
+- `uint256 public favoriteNumber` will show us favoriteNumber variable under Deployed Contracts on the left side of Remix
+- `uint256 favoriteNumber` will not show anything because it's not public anymore. 
+- external -> can only be called by an external contracts
+- internal -> can only be called inside the same contract
+- default visibility: internal
+- view, pure keywords
+  - view: reading a state off the BC / shown as blue button on Remix
+  - pure: purely do some type of math
+  - they don't change the state of the BC
+
+**Structs**
+- ways to define new types in Solidity
+
+Example
+
+`struct People {
+        uint256 favoriteNumber;
+        string name;
+    }`
+
+`People public person = People({favoriteNumber: 2, name:"Patrick"});`
+
+**Arrays**
+- storing a list of an object or type
+- ??? can Solidity arrays store different types of objects? 
+
+- `People[] public people;`
+- `People[1] public people;` fixed size array
+- `people.push(People(_favoriteNumber, _name));`
+
+- memory, storage
+  - memory: it will only be stored during execution, then deleted
+  - storage: data will persist after function is executed
+
+- Adding an item to the array with `push`
+`function addPerson(string memory _name, uint256 _favoriteNumber) public {
+        people.push(People([{favoriteNumber: _favoriteNumber, name: _name}]));
+    }`
+
+**Mapping**
+- it's a data structure
+- useful for getting key from value or vice versa
+- `mapping(string => uint256) public nameToFavoriteNumber;` ->  Becca will be mapped to her favorite number
+`function addPerson(string memory _name, uint256 _favoriteNumber) public {
+        people.push(People(_favoriteNumber, _name));
+        nameToFavoriteNumber[_name] = _favoriteNumber;
+    }`
+
+2:03:03'te kaldim.
+
 ### 02:09:20 -  Lesson 2 - StorageFactory
 ### 02:26:23 -  Lesson 3 - Fund me
 
